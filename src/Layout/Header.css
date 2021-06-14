@@ -14,6 +14,12 @@
   position: fixed;
   z-index: 10;
 }
+.header h1 {
+  letter-spacing: 1px;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: black;
+}
 
 .img-container {
   width: 100%;
