@@ -1,4 +1,4 @@
-.cart-item {
+.cart-items {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -15,11 +15,11 @@
   margin: 1rem 0;
 }
 
-.action {
+.actions {
   text-align: right;
 }
 
-.action .order {
+.actions button {
   font: inherit;
   cursor: pointer;
   background-color: transparent;
@@ -29,18 +29,18 @@
   margin-left: 1rem;
 }
 
-.action button:hover,
-.action button:active {
+.actions button:hover,
+.actions button:active {
   background-color: #5a1a01;
   border-color: #5a1a01;
   color: white;
 }
 
-.action .close {
+.actions .button--alt {
   color: #8a2b06;
 }
 
-.action .order {
+.actions .button {
   background-color: #8a2b06;
   color: white;
 }
