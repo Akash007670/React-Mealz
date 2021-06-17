@@ -7,6 +7,7 @@ const App = () => {
   return (
     <>
       <Header />
+      <Cart />
       <main className="main-container">
         <Meals />
       </main>
