@@ -3,12 +3,12 @@ import "./Header.css";
 import HeaderCartButton from "./HeaderCartButton";
 import "./HeaderCartButton.css";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
       <header className="header">
         <h1>ReactMealz</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={props.onShowCart} />
       </header>
       <div className="img-container"></div>
     </>
