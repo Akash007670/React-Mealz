@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "../UI/Modal";
 import "./Cart.css";
 
-const Cart = () => {
+const Cart = (props) => {
   const cartItem = (
     <ul className="cart-items">
       {[
@@ -25,8 +25,10 @@ const Cart = () => {
         <span>Rs.1000</span>
       </div>
       <div className="actions">
-        <button className="button--alt">Close</button>
-        <button>Order</button>
+        <button className="button--alt" onClick={props.onHideCart}>
+          Close
+        </button>
+        <button className="order">Order</button>
       </div>
     </Modal>
   );
