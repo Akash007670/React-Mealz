@@ -13,12 +13,12 @@ const Cart = (props) => {
           price: "Rs.800",
         },
       ].map((item) => (
-        <li>{item.name}</li>
+        <li key={item.id}>{item.name}</li>
       ))}
     </ul>
   );
   return (
-    <Modal>
+    <Modal onHideCart={props.onHideCart}>
       {cartItem}
       <div className="total">
         <span>Total Amount</span>

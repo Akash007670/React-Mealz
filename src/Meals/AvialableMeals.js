@@ -36,7 +36,6 @@ const AvialableMeals = () => {
         <Card>
           <ul>
             {DUMMY_DATA.map((meal) => (
-              // <li key={data.id}>{data.name}</li>
               <MealItem
                 key={meal.id}
                 name={meal.name}
